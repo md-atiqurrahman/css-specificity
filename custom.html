@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --main-color: springgreen;
+            --main-border: 2px solid red;
+            --main-background-color: magenta;
+            --main-width: 200px;
+        }
+
+        h1 {
+            color: var(--main-color);
+        }
+
+        p {
+            color: var(--main-color);
+            border: var(--main-border);
+        }
+
+        footer {
+            clear: both;
+        }
+
+        aside {
+            width: 200px;
+        }
+
+        .nav-bar,
+        .blogs {
+            float: left;
+            height: 500px;
+            color: var(--main-color);
+            background-color: var(--main-background-color);
+        }
+
+        .blogs {
+            background-color: yellow;
+            width: calc(100% - 2*var(--main-width));
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exploring custom css today</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, inventore?</p>
+    </header>
+    <main>
+        <section>
+            <aside class="nav-bar">
+                this is nevigation bar
+            </aside>
+            <div class="blogs">
+                Blog
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><small>copyright</small></p>
+    </footer>
+
+</body>
+
+</html>
